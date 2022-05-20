@@ -8,8 +8,8 @@ RUN CGO_ENABLED=0 go build -ldflags "-s -w" -o miaokeeper .
 
 # image
 
-FROM alpine:latest
-LABEL maintainer=BBAliance
+FROM alpine:master
+LABEL maintainer=kathylincn
 
 # disabling cgo when built, so no need to install libc6-compat
 RUN apk add --no-cache ca-certificates
