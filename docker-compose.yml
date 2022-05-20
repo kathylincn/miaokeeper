@@ -1,7 +1,7 @@
 version: "3"
 services:
   miaokeeper:
-    image: ghcr.io/bballiance/miaokeeper:latest
+    image: ghcr.io/kathylincn/miaokeeper:master
     networks:
       - miaokeeper
     links:
