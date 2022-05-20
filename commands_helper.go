@@ -142,7 +142,7 @@ func CheckChannelFollow(m *tb.Message, user *tb.User, isJoin bool) bool {
 				Bot.Delete(m)
 				return false
 			}
-			validationDelay := 300
+			validationDelay := 120
 			if gc.UnderAttackMode {
 				validationDelay = 30
 			}
